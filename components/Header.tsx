@@ -31,9 +31,9 @@ export default function Header() {
             alt="Logo"
             className="h-18 w-auto mx-2"
             />
-          Bistrot de la Plage
+          Le Bistrot de la Plage
         </Link>
-        <nav className="hidden md:flex gap-6 text-sm font-medium items-center">
+        <nav className="hidden md:flex gap-6 text-lg font-medium items-center">
           <Link href="#about" className="hover:text-amber-600 transition">
             À propos
           </Link>
@@ -54,8 +54,7 @@ export default function Header() {
           </Link>
           <Link
             href="/reservation"
-            className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full transition text-sm"
-          >
+            className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full transition"          >
             Réserver
           </Link>
         </nav>
