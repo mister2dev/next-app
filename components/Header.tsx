@@ -18,23 +18,33 @@ export default function Header() {
 
   return (
     <header
-      className={`fixed top-0 w-full z-50 transition-colors duration-300 ${
+      className={`lg:fixed top-0 w-full z-50 transition-colors duration-300 ${
         scrolled
-          ? 'bg-white/90 backdrop-blur-md shadow-md'
+          ? 'bg-[color:var(--secondary-color-2)]/90 backdrop-blur-md shadow-md'
           : 'bg-sky-50/70 backdrop-blur-lg'
       }`}
     >
       <div className="h-[80px] flex items-center justify-between px-6 mx-auto">
-        <Link href="/" className="items-center flex flex-row text-2xl font-bold text-gray-800">
-        <img
-          src="/bistrot_plage.png"
+        <Link 
+          href="#" 
+          className="items-center flex flex-row text-2xl font-bold text-[color:var(--primary-color)]"
+          onClick={(e) => {
+            e.preventDefault();
+            window.scrollTo({
+              top: 0,
+              behavior: 'smooth'
+            });
+          }}
+        >
+          <img
+            src="/bistrot_plage.png"
             alt="Logo"
             className="h-18 w-auto mx-2"
-            />
+          />
           Le Bistrot de la Plage
         </Link>
         <nav className="hidden md:flex gap-6 text-lg font-medium items-center">
-          <Link href="#about" className="hover:text-amber-600 transition">
+          <Link href="#about" className="hover:text-[color:var(--primary-color)] transition">
             À propos
           </Link>
           <Link href="#menu" className="hover:text-amber-600 transition">

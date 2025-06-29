@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Marcellus } from "next/font/google";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const marcellus = Marcellus({
@@ -22,10 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${marcellus.variable} antialiased`}
+        className={`${marcellus.variable} antialiased scroll-smooth`}
       >
       <Header />
         <main>{children}</main>
+      <Footer />
       </body>
     </html>
   );

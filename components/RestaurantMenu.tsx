@@ -55,7 +55,10 @@ const menu: { entrees: MenuItem[]; plats: MenuItem[]; desserts: MenuItem [] } = 
 
 export default function RestaurantMenu() {
   return (
-    <section className="max-w-3xl mx-auto px-6 py-12 text-gray-800 font-serif">
+    <section id="menu" className="max-w-3xl mx-auto px-6 py-12 text-[color:var(--text-primary)]">
+    <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] font-bold text-center mb-12">
+    Menu
+  </h1>
       <Section title="Entrées" items={menu.entrees} />
       <Section title="Plats" items={menu.plats} />
       <Section title="Desserts" items={menu.desserts} />
@@ -66,7 +69,7 @@ export default function RestaurantMenu() {
 function Section({ title, items }: { title: string; items: MenuItem[] }) {
   return (
     <div className="mb-12">
-      <h2 className="text-3xl font-bold text-amber-700 mb-6 border-b border-gray-300 pb-2 uppercase tracking-wide">
+      <h2 className="text-3xl font-bold text-[color:var(--primary-color)] mb-6 border-b border-[color:var(--accent-wood)] pb-2 uppercase tracking-wide">
         {title}
       </h2>
       <ul className="space-y-4">
@@ -75,8 +78,8 @@ function Section({ title, items }: { title: string; items: MenuItem[] }) {
             key={idx}
             className="flex justify-between items-start border-b border-dashed border-gray-200 pb-2"
           >
-            <span className="font-medium">{item.name}</span>
-            <span className="font-semibold text-red-600">{item.price}</span>
+            <span className="font-medium text-[color:var(--text-primary)]">{item.name}</span>
+            <span className="font-semibold text-[color:var(--accent-wood)]">{item.price}</span>
           </li>
         ))}
       </ul>

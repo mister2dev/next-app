@@ -33,17 +33,17 @@ export default function Hero() {
      <section className="py-20 px-6">
       <div className="flex flex-col md:flex-row items-center justify-between gap-12">
         {/* Texte à gauche */}
-        <div className="flex-1 text-center md:text-left">
-          <h1 className="text-4xl md:text-5xl text-amber-800 leading-tight mb-6 max-w-[755px]">
+        <div className="text-center md:text-left">
+          <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] leading-tight mb-6 max-w-[755px]">
             Savourez l’instant <br className="hidden md:inline" />
             dans notre bistrot de bord de mer
           </h1>
-          <p className="text-gray-600 text-lg mb-8 max-w-md">
+          <p className="text-[color:var(--text-primary)] text-lg mb-8 max-w-md">
             Des produits frais, une cuisine maison et une ambiance chaleureuse. Réservez votre table dès maintenant !
           </p>
           <a
             href="#reservation"
-            className="inline-block bg-amber-600 hover:bg-amber-700 text-white font-semibold py-3 px-6 rounded-full shadow-md transition"
+            className="inline-block bg-[color:var(--primary-color)] hover:bg-[color:var(--primary-color)]/80 text-[color:var(--text-inverse)] font-semibold py-3 px-6 rounded-full shadow-md transition"
           >
             Réserver une table
           </a>

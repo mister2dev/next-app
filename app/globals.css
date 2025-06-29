@@ -1,26 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --primary-color: #2C5D8A; /* Bleu acier profond */
+  --secondary-color-1: #9FC3A0; /* Vert sauge doux */
+  --secondary-color-2: #F3E9D2; /* Beige clair/crème */
+  --accent-wood: #8B5E3C; /* Brun chaleureux */
+  --text-primary: #333333; /* Gris très foncé */
+  --text-inverse: #FFFFFF; /* Blanc pur */
+  --background: linear-gradient(180deg, rgba(44, 93, 138, 0.05) 0%, rgba(159, 195, 160, 0.05) 100%);
+  --foreground: var(--text-primary);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-marcellus);
+  --font-mono: var(--font-marcellus);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1a1a1a; /* Fond plus foncé que le gris très foncé */
+    --foreground: var(--text-inverse); /* Blanc pur pour meilleure lisibilité */
+    --primary-color: #4D86B5; /* Bleu acier plus foncé */
+    --secondary-color-1: #7FB58B; /* Vert sauge plus foncé */
+    --secondary-color-2: #E6D9C4; /* Beige clair plus foncé */
+    --accent-wood: #6B442B; /* Brun chaleureux plus foncé */
   }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-marcellus);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
