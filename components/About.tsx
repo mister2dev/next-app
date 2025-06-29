@@ -6,7 +6,7 @@ import { Star, Leaf, Clock, MapPin } from 'lucide-react'
 export default function About() {
     return (
       <>
-/* Section Histoire */
+{/* Section Histoire */}
         <section id="about" className="mb-20">
           <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] font-bold text-center mb-12">
             Notre Histoire
