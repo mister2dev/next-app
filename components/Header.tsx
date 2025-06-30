@@ -19,6 +19,15 @@ export default function Header() {
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleLogoClick = () => {
+    if (window.scrollY > 0) {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth',
+      });
+    }
+  };
+
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
@@ -35,15 +44,9 @@ export default function Header() {
     >
       <div className="h-[80px] flex items-center justify-between md:px-6 mx-auto">
         <Link
-          href="#"
+          href="/"
+          onClick={handleLogoClick}
           className="items-center flex flex-row md:text-2xl font-bold text-[color:var(--primary-color)]"
-          onClick={e => {
-            e.preventDefault();
-            window.scrollTo({
-              top: 0,
-              behavior: 'smooth',
-            });
-          }}
         >
           <img
             src="/bistrot_plage.png"
@@ -59,19 +62,34 @@ export default function Header() {
           >
             À propos
           </Link>
-          <Link href="#menu" className="hover:text-[color:var(--primary-color)] transition">
+          <Link
+            href="#menu"
+            className="hover:text-[color:var(--primary-color)] transition"
+          >
             Menu
           </Link>
-          <Link href="#gallery" className="hover:text-[color:var(--primary-color)] transition">
+          <Link
+            href="#gallery"
+            className="hover:text-[color:var(--primary-color)] transition"
+          >
             Galerie
           </Link>
-          <Link href="#team" className="hover:text-[color:var(--primary-color)] transition">
+          <Link
+            href="#team"
+            className="hover:text-[color:var(--primary-color)] transition"
+          >
             Équipe
           </Link>
-          <Link href="#testimonials" className="hover:text-[color:var(--primary-color)] transition">
+          <Link
+            href="#testimonials"
+            className="hover:text-[color:var(--primary-color)] transition"
+          >
             Avis
           </Link>
-          <Link href="#contact" className="hover:text-[color:var(--primary-color)] transition">
+          <Link
+            href="#contact"
+            className="hover:text-[color:var(--primary-color)] transition"
+          >
             Contact
           </Link>
           <Link
@@ -83,7 +101,7 @@ export default function Header() {
         </nav>
 
         <button
-          className="px-6 md:hidden text-gray-700"
+          className="px-6 md:hidden text-gray-700 z-50"
           onClick={toggleMenu}
         >
           {isMenuOpen ? <X /> : <Menu />}

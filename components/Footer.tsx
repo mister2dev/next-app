@@ -105,7 +105,7 @@ export default function Footer() {
             </h3>
             <ul className="space-y-3">
               <li className="text-[color:var(--text-primary)]">
-                <span className="font-medium"></span> Réservation en ligne
+                <span className="font-medium">Réservation en ligne</span>
               </li>
             </ul>
           </div>
@@ -143,7 +143,7 @@ export default function Footer() {
               © {new Date().getFullYear()} Le Bistrot de la Plage. Tous droits
               réservés.
             </p>
-            <div className="flex gap-6 mt-4 md:mt-0">
+            <div className="flex w-full justify-between mt-4 md:mt-0">
               <Link
                 href="/legals"
                 className="text-[color:var(--text-primary)] text-sm hover:text-[color:var(--primary-color)] transition"

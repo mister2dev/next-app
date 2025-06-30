@@ -13,7 +13,7 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-[400px]">
             <Image
-              src="/terrasse.png"
+              src="/interieur.png"
               alt="Vue de la terrasse du restaurant"
               fill
               className="object-cover rounded-lg"
