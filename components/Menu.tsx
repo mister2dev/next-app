@@ -40,7 +40,7 @@ export default function MenuHeader({ isOpen, onClose }: MenuHeaderProps) {
 
       {/* Mobile menu content */}
       <div
-        className={`fixed top-0 right-0 h-[900px] bg-[color:var(--secondary-color-2)] shadow-lg py-20 w-64 z-48 md:hidden transform transition-transform duration-300 ${
+        className={`fixed top-0 right-0 h-[900px] bg-[color:var(--secondary-color-1)] shadow-lg py-20 w-64 z-48 md:hidden transform transition-transform duration-300 ${
           isOpen ? 'translate-x-0' : 'translate-x-full shadow-none'
         }`}
       >

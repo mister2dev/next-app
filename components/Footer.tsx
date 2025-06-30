@@ -5,7 +5,7 @@ import { Facebook, Instagram, MapPin, Clock, Phone, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
-    <footer className="bg-[color:var(--secondary-color-2)] py-6">
+    <footer className="bg-[color:var(--secondary-color-1)] py-6">
       <div className="container mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Section Contact */}

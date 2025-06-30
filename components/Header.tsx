@@ -37,11 +37,18 @@ export default function Header() {
       className={`fixed top-0 w-full z-50 transition-colors duration-300
       ${
         scrolled
-          ? 'bg-[color:var(--secondary-color-2)]/90 backdrop-blur-md shadow-md'
+          ? 'bg-[color:var(--secondary-color-1)]/90 backdrop-blur-md shadow-md'
           : 'bg-sky-50/70 backdrop-blur-lg'
       }
     `}
     >
+      <div
+        className={`fixed inset-0 bg-black/50 backdrop-blur-sm z-40 h-[900px] transition-opacity duration-300 ease-in-out ${isMenuOpen ? 'opacity-100' : 'opacity-0'}`}
+        style={{
+          pointerEvents: isMenuOpen ? 'auto' : 'none',
+        }}
+        onClick={() => toggleMenu()}
+      />
       <div className="h-[80px] flex items-center justify-between md:px-6 mx-auto">
         <Link
           href="/"

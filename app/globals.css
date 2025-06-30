@@ -2,7 +2,7 @@
 
 :root {
   --primary-color: #2C5D8A; /* Bleu acier profond */
-  --secondary-color-1: #9FC3A0; /* Vert sauge doux */
+  --secondary-color-1: rgb(139, 190, 208); /* Vert sauge doux */
   --secondary-color-2: #F3E9D2; /* Beige clair/crème */
   --accent-wood: #8B5E3C; /* Brun chaleureux */
   --text-primary: #333333; /* Gris très foncé */
