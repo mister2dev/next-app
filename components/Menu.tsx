@@ -1,14 +1,13 @@
-'use client'
+'use client';
 
-import { useState } from 'react'
-import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import Link from 'next/link';
 
-export default function MenuHeader() {
-  const [isOpen, setIsOpen] = useState(false)
+interface MenuHeaderProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
 
-  const toggleMenu = () => setIsOpen(!isOpen)
-
+export default function MenuHeader({ isOpen, onClose }: MenuHeaderProps) {
   const navLinks = [
     { name: 'À propos', href: '#about' },
     { name: 'Menu', href: '#menu' },
@@ -17,10 +16,10 @@ export default function MenuHeader() {
     { name: 'Avis', href: '#testimonials' },
     { name: 'Contact', href: '#contact' },
     { name: 'Réserver', href: '/reservation' },
-  ]
+  ];
 
   return (
-    <nav className="relative">
+    <nav className="relative md:hidden">
       {/* Desktop menu */}
       <ul className="hidden md:flex gap-6 text-sm font-medium items-center">
         {navLinks.map(link => (
@@ -40,11 +39,6 @@ export default function MenuHeader() {
         </li>
       </ul>
 
-      {/* Mobile menu toggle */}
-      <button onClick={toggleMenu} className="md:hidden text-gray-700">
-        {isOpen ? <X size={28} /> : <Menu size={28} />}
-      </button>
-
       {/* Mobile menu content */}
       {isOpen && (
         <div className="absolute top-12 right-0 bg-white shadow-lg rounded-md p-4 w-64 z-50 md:hidden">
@@ -53,7 +47,7 @@ export default function MenuHeader() {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  onClick={() => setIsOpen(false)}
+                  onClick={onClose}
                   className="hover:text-amber-600 transition"
                 >
                   {link.name}
@@ -63,7 +57,7 @@ export default function MenuHeader() {
             <li>
               <Link
                 href="/reservation"
-                onClick={() => setIsOpen(false)}
+                onClick={onClose}
                 className="bg-amber-500 hover:bg-amber-600 text-white px-4 py-2 rounded-full transition text-sm block text-center"
               >
                 Réserver
@@ -73,5 +67,5 @@ export default function MenuHeader() {
         </div>
       )}
     </nav>
-  )
+  );
 }

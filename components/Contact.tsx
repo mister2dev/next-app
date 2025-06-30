@@ -1,18 +1,15 @@
 'use client';
 
-import Image from 'next/image';
-import { Star, Leaf, Clock, MapPin } from 'lucide-react';
-
 export default function Contact() {
   return (
     <>
-      <div className="min-h-screen py-20">
+      <div className="mb-20">
         <div className="container mx-auto px-6">
           <section id="contact" className="mb-20">
-            <h2 className="text-3xl md:text-4xl text-[color:var(--primary-color)] font-bold text-center mb-12">
+            <h2 className="text-3xl md:text-4xl text-[color:var(--primary-color)] text-center mb-12">
               Contactez-nous
             </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="grid grid-cols-1 gap-8">
               <div>
                 <h3 className="text-2xl font-semibold text-[color:var(--primary-color)] mb-4">
                   Réserver votre table

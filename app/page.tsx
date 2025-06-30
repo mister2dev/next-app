@@ -1,6 +1,8 @@
 import Hero from '@/components/Hero';
 import RestaurantMenu from '@/components/RestaurantMenu';
+import Gallery from '@/components/Gallery';
 import About from '@/components/About';
+import Team from '@/components/Team';
 import Contact from '@/components/Contact';
 import Reviews from '@/components/Reviews';
 
@@ -11,6 +13,8 @@ export default function Home() {
         <Hero />
         <About />
         <RestaurantMenu />
+        <Gallery />
+        <Team />
         <Reviews />
         <Contact />
       </div>

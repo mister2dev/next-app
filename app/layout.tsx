@@ -1,18 +1,18 @@
-import type { Metadata } from "next";
-import { Marcellus } from "next/font/google";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
-import "./globals.css";
+import type { Metadata } from 'next';
+import { Marcellus } from 'next/font/google';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import './globals.css';
 
 const marcellus = Marcellus({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-marcellus",
+  weight: '400',
+  subsets: ['latin'],
+  variable: '--font-marcellus',
 });
 
 export const metadata: Metadata = {
-  title: "Le Bistrot De La Plage",
-  description: "Cuisine raffinée et ambiance chaleureuse",
+  title: 'Le Bistrot De La Plage',
+  description: 'Cuisine raffinée et ambiance chaleureuse',
 };
 
 export default function RootLayout({
@@ -23,11 +23,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${marcellus.variable} antialiased scroll-smooth`}
+        className={`${marcellus.variable} antialiased scroll-smooth [scroll-padding-top:50px]`}
       >
-      <Header />
+        <Header />
         <main>{children}</main>
-      <Footer />
+        <Footer />
       </body>
     </html>
   );
