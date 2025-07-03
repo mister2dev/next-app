@@ -11,7 +11,7 @@ export default function Team() {
           Notre Philosophie
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="text-center p-6 bg-[color:var(--secondary-color-2)] rounded-lg shadow-md">
+          <div className="text-center p-6 bg-[color:var(--secondary-color-3)] rounded-lg shadow-md">
             <Leaf className="w-12 h-12 text-[color:var(--primary-color)] mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-[color:var(--primary-color)] mb-2">
               Cuisine Fraîche
@@ -21,7 +21,7 @@ export default function Team() {
               sélectionnés avec soin chaque jour.
             </p>
           </div>
-          <div className="text-center p-6 bg-[color:var(--secondary-color-2)] rounded-lg shadow-md">
+          <div className="text-center p-6 bg-[color:var(--secondary-color-3)] rounded-lg shadow-md">
             <Clock className="w-12 h-12 text-[color:var(--primary-color)] mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-[color:var(--primary-color)] mb-2">
               Service Rapide
@@ -31,7 +31,7 @@ export default function Team() {
               efficacité.
             </p>
           </div>
-          <div className="text-center p-6 bg-[color:var(--secondary-color-2)] rounded-lg shadow-md">
+          <div className="text-center p-6 bg-[color:var(--secondary-color-3)] rounded-lg shadow-md">
             <MapPin className="w-12 h-12 text-[color:var(--primary-color)] mx-auto mb-4" />
             <h3 className="text-xl font-semibold text-[color:var(--primary-color)] mb-2">
               Emplacement Idéal
@@ -47,7 +47,7 @@ export default function Team() {
           Notre Équipe
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="bg-[color:var(--secondary-color-2)] rounded-lg shadow-md p-6">
+          <div className="bg-[color:var(--secondary-color-3)] rounded-lg shadow-md p-6">
             <div className="relative h-64 mb-6">
               <Image
                 src="/cuisto1.webp"
@@ -63,7 +63,7 @@ export default function Team() {
               Chef exécutif depuis 2005
             </p>
           </div>
-          <div className="bg-[color:var(--secondary-color-2)] rounded-lg shadow-md p-6">
+          <div className="bg-[color:var(--secondary-color-3)] rounded-lg shadow-md p-6">
             <div className="relative h-64 mb-6">
               <Image
                 src="/cuisto3.webp"
@@ -79,7 +79,7 @@ export default function Team() {
               Sommelière en chef
             </p>
           </div>
-          <div className="bg-[color:var(--secondary-color-2)] rounded-lg shadow-md p-6">
+          <div className="bg-[color:var(--secondary-color-3)] rounded-lg shadow-md p-6">
             <div className="relative h-64 mb-6">
               <Image
                 src="/cuisto2.webp"

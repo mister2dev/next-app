@@ -15,25 +15,25 @@ export default function Footer() {
             </h3>
             <div className="space-y-4">
               <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-[color:var(--accent-wood)]" />
+                <MapPin className="w-5 h-5 text-[color:var(--text-primary)]" />
                 <p className="text-[color:var(--text-primary)]">
                   123 Quai de la Plage, 75000 Paris
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-[color:var(--accent-wood)]" />
+                <Clock className="w-5 h-5 text-[color:var(--text-primary)]" />
                 <p className="text-[color:var(--text-primary)]">
                   Lundi - Samedi : 12h00 - 23h00
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[color:var(--accent-wood)]" />
+                <Phone className="w-5 h-5 text-[color:var(--text-primary)]" />
                 <p className="text-[color:var(--text-primary)]">
                   +33 1 23 45 67 89
                 </p>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-[color:var(--accent-wood)]" />
+                <Mail className="w-5 h-5 text-[color:var(--text-primary)]" />
                 <p className="text-[color:var(--text-primary)]">
                   contact@bistrotplage.fr
                 </p>
