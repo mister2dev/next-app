@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero';
 import RestaurantMenu from '@/components/RestaurantMenu';
 import Gallery from '@/components/Gallery';
+import Gallery2 from '@/components/Gallery2';
 import About from '@/components/About';
 import Team from '@/components/Team';
 import Contact from '@/components/Contact';
@@ -14,6 +15,7 @@ export default function Home() {
         <About />
         <RestaurantMenu />
         <Gallery />
+        <Gallery2 />
         <Team />
         <Reviews />
         <Contact />
