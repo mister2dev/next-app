@@ -6,14 +6,17 @@ import { Clock, Star } from 'lucide-react';
 export default function About() {
   return (
     <>
-      <section id="about" className="mb-20 px-6">
-        <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)]  text-center mb-12">
+      <section
+        id="about"
+        className="py-20 px-6 bg-[color:var(--secondary-color-3)]"
+      >
+        <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
           Notre Histoire
         </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-[400px]">
             <Image
-              src="/interieur.png"
+              src="/interieur.webp"
               alt="Vue de la terrasse du restaurant"
               fill
               className="object-cover rounded-lg"

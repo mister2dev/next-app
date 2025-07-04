@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+/* Surcharge LightGallery : overlay sur la miniature active */
+.lg-thumb-item.active,
+.lg-thumb-item:hover {
+  border: none !important;
+  position: relative;
+}
+.lg-thumb-item.active::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.3);
+  pointer-events: none;
+  border-radius: 4px;
+}
+
 :root {
   --primary-color: #2C5D8A; /* Bleu acier profond */
   --secondary-color-1: rgb(139, 190, 208); /* Vert sauge doux */
@@ -42,4 +57,26 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+/* styles/globals.css */
+.swiper-pagination-bullet {
+  background-color: #ccc; /* couleur par défaut */
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: var(--secondary-color-1) !important; /* ta couleur personnalisée */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: var(--secondary-color-1) !important ; /* bleu profond */
+  /* ou pour changer l’icône */
+  background-color: transparent;
+  font-size: 20px;
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
 }

@@ -56,7 +56,7 @@ export default function Header() {
           className="items-center flex flex-row md:text-2xl font-bold text-[color:var(--primary-color)]"
         >
           <img
-            src="/bistrot_plage.png"
+            src="/bistrot_plage.webp"
             alt="Logo"
             className="h-12 w-auto mx-2"
           />

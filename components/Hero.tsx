@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Hero() {
   return (
-    <section className="py-20 px-6">
+    <section className="min-h-screen flex items-center px-6">
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Texte à gauche */}
         <div className="md:text-left">
@@ -23,9 +23,9 @@ export default function Hero() {
         <div className="flex-1 w-full">
           <div className="relative w-full md:min-w-[370px]">
             <img
-              src="/plat4.png" // <-- place ton image ici
+              src="/plat4.png"
               alt="Plat du restaurant"
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full mt-10"
             />
           </div>
         </div>

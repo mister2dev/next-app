@@ -1,80 +1,61 @@
 'use client';
 
-import Image from 'next/image';
+import LightGallery from 'lightgallery/react';
+
+// Plugins
+import lgThumbnail from 'lightgallery/plugins/thumbnail';
+import lgZoom from 'lightgallery/plugins/zoom';
+
+// CSS
+import 'lightgallery/css/lightgallery.css';
+import 'lightgallery/css/lg-thumbnail.css';
+import 'lightgallery/css/lg-zoom.css';
 
 const images = [
-  '/salad.jpg',
-  '/salad2.jpg',
-  '/salad3.jpg',
-  '/food.jpg',
-  '/food2.jpg',
-  '/food3.jpg',
-  '/food4.jpg',
+  { src: '/images/food1.webp', alt: 'Saumon grillé et légumes croquants' },
+  { src: '/images/food2.webp', alt: 'Tarte fine aux pommes et caramel' },
+  {
+    src: '/images/food3.webp',
+    alt: 'Entrecôte, frites maison et sauce au poivre',
+  },
+  { src: '/images/food4.webp', alt: 'Salade fraîcheur estivale' },
+  { src: '/images/food5.webp', alt: 'Risotto aux champignons' },
+  { src: '/images/food6.webp', alt: 'Burger gourmet au cheddar' },
+  { src: '/images/food7.webp', alt: 'Dessert chocolaté fondant' },
 ];
 
 export default function Gallery() {
   return (
-    <section id="gallery" className="mb-12">
-      <h2 className="text-3xl md:text-4xl text-[color:var(--primary-color)] text-center mb-12">
-        Nos Spécialités
+    <div className="w-full bg-[color:var(--secondary-color-3)] py-10 px-0">
+      <h2 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
+        Notre Galerie
       </h2>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 my-8 px-6">
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className="relative aspect-square overflow-hidden rounded-lg shadow-md hover:scale-105 transition-transform duration-300"
+      <LightGallery
+        speed={500}
+        plugins={[lgThumbnail, lgZoom]}
+        elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+      >
+        {images.map((image, i) => (
+          <a
+            key={i}
+            href={image.src}
+            data-sub-html={`<h4 class='text-lg font-semibold'>${image.alt}</h4>`}
+            className="relative group overflow-hidden rounded-lg"
           >
-            <Image
-              src={image}
-              alt={`Plat ${index + 1}`}
-              fill
-              className="object-cover"
+            <img
+              src={image.src}
+              alt={image.alt}
+              className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-105"
             />
-          </div>
+            {/* Overlay */}
+            <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+            {/* Caption on hover (optional) */}
+            <div className="absolute bottom-2 left-2 text-white text-sm font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              {image.alt}
+            </div>
+          </a>
         ))}
-      </div>
-
-      <div className="p-6 bg-gray-100 min-h-screen">
-        <h2 className="text-2xl font-bold mb-6 text-center">Ma Galerie</h2>
-
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-          <div className="overflow-hidden rounded-2xl shadow-lg group">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1673581152308-591c1645be02?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Image 1"
-              className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-          <div className="overflow-hidden rounded-2xl shadow-lg group">
-            <img
-              src="https://images.unsplash.com/photo-1677051707499-87ea304987b4?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Image 2"
-              className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-          <div className="overflow-hidden rounded-2xl shadow-lg group">
-            <img
-              src="https://plus.unsplash.com/premium_photo-1726704103473-4255dfd5b911?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Image 3"
-              className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-          <div className="overflow-hidden rounded-2xl shadow-lg group">
-            <img
-              src="https://images.unsplash.com/photo-1723744910399-6fa2951a68b5?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Image 4"
-              className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-          <div className="overflow-hidden rounded-2xl shadow-lg group">
-            <img
-              src="https://images.unsplash.com/photo-1672106646371-2c70a76d0b1c?q=80&w=627&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt="Image 5"
-              className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
+      </LightGallery>
+    </div>
   );
 }
