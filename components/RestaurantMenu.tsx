@@ -61,7 +61,7 @@ export default function RestaurantMenu() {
   return (
     <section
       id="menu"
-      className="max-w-3xl mx-auto px-6 mb-8 text-[color:var(--text-primary)]"
+      className="max-w-3xl mx-auto p-6 text-[color:var(--text-primary)]"
     >
       <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
         Menu

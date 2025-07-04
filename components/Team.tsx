@@ -6,7 +6,7 @@ import Image from 'next/image';
 export default function Team() {
   return (
     <>
-      <section className="mb-20 px-6">
+      <section className="mb-20 p-6">
         <h2 className="text-3xl md:text-4xl text-[color:var(--primary-color)] text-center mb-12">
           Notre Philosophie
         </h2>

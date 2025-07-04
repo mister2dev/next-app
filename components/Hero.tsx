@@ -8,11 +8,11 @@ export default function Hero() {
       <div className="flex flex-col md:flex-row items-center justify-between">
         {/* Texte à gauche */}
         <div className="md:text-left">
-          <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] leading-tight mt-14 max-w-[755px]">
+          <h1 className="text-4xl md:text-[80px] text-[color:var(--primary-color)] leading-tight mt-14 max-w-[755px]">
             Savourez l’instant en <br className="hidden md:inline" />
             bord de mer
           </h1>
-          <p className="text-[color:var(--text-primary)] text-[16px] md:text-[18px] my-8 max-w-md">
+          <p className="text-[color:var(--text-primary)] text-[16px] my-8 ">
             Cuisine maison à base de produits frais et locaux, dans une ambiance
             chaleureuse aux saveurs du littoral. Réservez votre table pour une
             expérience authentique et gourmande.

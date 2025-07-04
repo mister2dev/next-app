@@ -6,10 +6,7 @@ import { Clock, Star } from 'lucide-react';
 export default function About() {
   return (
     <>
-      <section
-        id="about"
-        className="py-20 px-6 bg-[color:var(--secondary-color-3)]"
-      >
+      <section id="about" className="p-6 bg-[color:var(--secondary-color-3)]">
         <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
           Notre Histoire
         </h1>
@@ -34,7 +31,7 @@ export default function About() {
               unique où les saveurs raffinées se marient parfaitement avec
               l'atmosphère décontractée de la plage.
             </p>
-            <div className="flex gap-8 mt-8">
+            <div className="flex gap-8 my-10">
               <div className="flex items-center gap-3">
                 <Star className="w-6 h-6 text-[color:var(--primary-color)]" />
                 <span className="text-[color:var(--text-primary)]">

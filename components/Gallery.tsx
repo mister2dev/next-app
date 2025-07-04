@@ -12,35 +12,50 @@ import 'lightgallery/css/lg-thumbnail.css';
 import 'lightgallery/css/lg-zoom.css';
 
 const images = [
-  { src: '/images/food1.webp', alt: 'Saumon grillé et légumes croquants' },
-  { src: '/images/food2.webp', alt: 'Tarte fine aux pommes et caramel' },
+  { src: '/images/food1.webp', alt: 'Assiette de lasagne à la bolognaise' },
+  {
+    src: '/images/food2.webp',
+    alt: 'Poke bowl avec poulet croustillant et légumes frais',
+  },
   {
     src: '/images/food3.webp',
-    alt: 'Entrecôte, frites maison et sauce au poivre',
+    alt: 'Lasagne revisitée avec chips de parmesan et sauce crémeuse',
   },
-  { src: '/images/food4.webp', alt: 'Salade fraîcheur estivale' },
-  { src: '/images/food5.webp', alt: 'Risotto aux champignons' },
-  { src: '/images/food6.webp', alt: 'Burger gourmet au cheddar' },
-  { src: '/images/food7.webp', alt: 'Dessert chocolaté fondant' },
+  {
+    src: '/images/food4.webp',
+    alt: 'Filet de saumon grillé avec salade fraîche',
+  },
+  {
+    src: '/images/food5.webp',
+    alt: 'Salade fraîche avec framboise et burrata',
+  },
+  {
+    src: '/images/food6.webp',
+    alt: 'Plat de nouilles asiatiques avec tofu et légumes',
+  },
+  { src: '/images/food7.webp', alt: 'Assiette de légumes rôtis' },
 ];
 
 export default function Gallery() {
   return (
-    <div className="w-full bg-[color:var(--secondary-color-3)] py-10 px-0">
+    <div
+      id="gallery"
+      className="w-full bg-[color:var(--secondary-color-3)] p-6 pb-20"
+    >
       <h2 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
         Notre Galerie
       </h2>
       <LightGallery
         speed={500}
         plugins={[lgThumbnail, lgZoom]}
-        elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4"
+        elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
       >
         {images.map((image, i) => (
           <a
             key={i}
             href={image.src}
             data-sub-html={`<h4 class='text-lg font-semibold'>${image.alt}</h4>`}
-            className="relative group overflow-hidden rounded-lg"
+            className="relative group overflow-hidden shadow-xl"
           >
             <img
               src={image.src}

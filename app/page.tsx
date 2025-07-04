@@ -9,7 +9,7 @@ import Reviews from '@/components/Reviews';
 export default function Home() {
   return (
     <div className="bg-sky-50 items-center min-h-screen md:pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
-      <div className="flex flex-col gap-[32px] row-start-2 items-center">
+      <div className="flex flex-col row-start-2 items-center">
         <Hero />
         <About />
         <RestaurantMenu />
