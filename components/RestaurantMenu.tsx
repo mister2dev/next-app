@@ -8,52 +8,106 @@ type MenuItem = {
 const menu: { entrees: MenuItem[]; plats: MenuItem[]; desserts: MenuItem[] } = {
   entrees: [
     {
-      name: 'Aumônière de chèvre frais au miel et herbes de Provence',
-      price: '8,90 €',
+      name: 'Assiette de Bulots Mayonnaise Maison',
+      price: '11,90 €',
     },
-    { name: 'Os à moelle gratiné', price: '8,90 €' },
-    { name: 'Saumon gravelax maison', price: '9,50 €' },
-    { name: 'Entrée du jour', price: '8,90 €' },
+    {
+      name: 'Huîtres du moment (voir ardoise) — les 6',
+      price: '15,70 €',
+    },
+    {
+      name: 'Huîtres du moment (voir ardoise) — les 12',
+      price: '24,90 €',
+    },
+    {
+      name: 'Avocat Crabe sauce cocktail',
+      price: '8,90 €',
+    },
+    {
+      name: 'Terrine Bretonne de campagne IGP',
+      price: '7,50 €',
+    },
+    {
+      name: 'Bouquet de crevettes Roses',
+      price: '9,20 €',
+    },
+    {
+      name: 'Suggestion de l’ardoise du jour',
+      price: '7,90 €',
+    },
   ],
+
   plats: [
     {
-      name: 'Dos de cabillaud et légumes de saison (sauce au beurre blanc citronné)',
-      price: '20,90 €',
+      name: 'Poisson du jour (selon arrivage) risotto et légumes de saison',
+      price: '24,90 €',
     },
     {
-      name: 'Pavé de saumon, tomates et pesto IGP (avec son riz blanc)',
-      price: '20,90 €',
+      name: 'Duo de Croquettes de crevettes grises maison, frites, salade',
+      price: '18,90 €',
     },
     {
-      name: 'Pavé de bœuf et frites maison (sauce au choix)',
-      price: '19,90 €',
+      name: 'Suggestion de l’ardoise du jour',
+      price: '24,90 €',
     },
     {
-      name: 'Belle entrecôte (~350 g) et frites maison (sauce au choix)',
-      price: '22,50 €',
+      name: 'Tortellini Parmesan - Ricotta Épinard (végétarien)',
+      price: '20,90 €',
     },
     {
-      name: 'Burger classique du chef (frites)',
-      price: '17,50 €',
+      name: 'Salade César (Œuf dur, anchois, parmesan, croûtons, sauce César)',
+      price: '16,90 €',
     },
     {
-      name: 'Salade César',
-      price: '18,50 €',
+      name: 'Pavé de bœuf Blanc Bleu sauce au choix (+200g)',
+      price: '20,90 €',
     },
     {
-      name: 'Supplément frites',
-      price: '2,00 €',
+      name: 'Burger du Chef (bœuf Angus) — Simple',
+      price: '17,90 €',
     },
     {
-      name: 'Supplément sauce (Poivre, Maroilles, Roquefort, Béarnaise)',
-      price: '3,00 €',
+      name: 'Burger du Chef (bœuf Angus) — Double 300g',
+      price: '22,90 €',
+    },
+    {
+      name: 'Travers de porc (VF) marinade du Bistrot',
+      price: '20,90 €',
+    },
+    {
+      name: 'Potjevleesch de la maison Pinthe (avec os)',
+      price: '18,90 €',
     },
   ],
   desserts: [
-    { name: 'Assiette gourmande', price: '8,90 €' },
-    { name: 'Tarte du jour', price: '7,50 €' },
-    { name: 'Mousse au chocolat', price: '7,50 €' },
-    { name: 'Crème brûlée', price: '7,50 €' },
+    {
+      name: 'Crème Brulée',
+      price: '8,00 €',
+    },
+    {
+      name: 'Mousse au chocolat (Barry)',
+      price: '8,00 €',
+    },
+    {
+      name: 'Tarte Citron Revisitée',
+      price: '8,00 €',
+    },
+    {
+      name: 'Dessert du Moment',
+      price: '8,00 €',
+    },
+    {
+      name: 'Café gourmand',
+      price: '9,00 €',
+    },
+    {
+      name: 'Thé gourmand',
+      price: '9,00 €',
+    },
+    {
+      name: 'Digestif gourmand (Calvados, Cognac, Limoncello)',
+      price: '10,00 €',
+    },
   ],
 };
 

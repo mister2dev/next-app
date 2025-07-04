@@ -11,32 +11,64 @@ export default function Footer() {
           {/* Section Contact */}
           <div className="space-y-6">
             <h3 className="text-[color:var(--primary-color)] font-bold text-xl mb-4">
-              Contact
+              Horaires d'ouverture
             </h3>
-            <div className="space-y-4">
+            <div className="space-y-2">
               <div className="flex items-center gap-3">
-                <MapPin className="w-5 h-5 text-[color:var(--text-primary)]" />
-                <p className="text-[color:var(--text-primary)]">
-                  123 Quai de la Plage, 75000 Paris
-                </p>
+                <span className="text-[color:var(--text-primary)] font-semibold w-24">
+                  Vendredi :
+                </span>
+                <span className="text-[color:var(--text-primary)]">
+                  12:00–14:00, 19:00–22:00
+                </span>
               </div>
               <div className="flex items-center gap-3">
-                <Clock className="w-5 h-5 text-[color:var(--text-primary)]" />
-                <p className="text-[color:var(--text-primary)]">
-                  Lundi - Samedi : 12h00 - 23h00
-                </p>
+                <span className="text-[color:var(--text-primary)] font-semibold w-24">
+                  Samedi :
+                </span>
+                <span className="text-[color:var(--text-primary)]">
+                  12:00–14:00, 19:00–22:00
+                </span>
               </div>
               <div className="flex items-center gap-3">
-                <Phone className="w-5 h-5 text-[color:var(--text-primary)]" />
-                <p className="text-[color:var(--text-primary)]">
-                  +33 1 23 45 67 89
-                </p>
+                <span className="text-[color:var(--text-primary)] font-semibold w-24">
+                  Dimanche :
+                </span>
+                <span className="text-[color:var(--text-primary)]">
+                  12:00–17:00
+                </span>
               </div>
               <div className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-[color:var(--text-primary)]" />
-                <p className="text-[color:var(--text-primary)]">
-                  contact@bistrotplage.fr
-                </p>
+                <span className="text-[color:var(--text-primary)] font-semibold w-24">
+                  Lundi :
+                </span>
+                <span className="text-[color:var(--text-primary)]">
+                  12:00–14:00
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-[color:var(--text-primary)] font-semibold w-24">
+                  Mardi :
+                </span>
+                <span className="text-[color:var(--text-primary)]">
+                  09:00–17:00
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-[color:var(--text-primary)] font-semibold w-24">
+                  Mercredi :
+                </span>
+                <span className="text-[color:var(--text-primary)]">
+                  12:00–14:00
+                </span>
+              </div>
+              <div className="flex items-center gap-3">
+                <span className="text-[color:var(--text-primary)] font-semibold w-24">
+                  Jeudi :
+                </span>
+                <span className="text-[color:var(--text-primary)]">
+                  12:00–14:00
+                </span>
               </div>
             </div>
           </div>
@@ -138,21 +170,22 @@ export default function Footer() {
 
         {/* Bas du footer */}
         <div className="mt-6 pt-8 border-t border-[color:var(--accent-wood)]/20">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-[color:var(--text-primary)] text-sm">
+          <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+            <p className="text-[color:var(--text-primary)] text-sm text-left">
               © {new Date().getFullYear()} Le Bistrot de la Plage. Tous droits
               réservés.
             </p>
-            <div className="flex w-full justify-between mt-4 md:mt-0">
+            <div className="flex w-full mt-4 md:mt-0 md:flex-row justify-between md:justify-end md:items-center md:w-auto md:space-x-6">
               <Link
                 href="/legals"
-                className="text-[color:var(--text-primary)] text-sm hover:text-[color:var(--primary-color)] transition"
+                className="text-[color:var(--text-primary)] text-sm hover:text-[color:var(--primary-color)] transition text-center md:text-right"
               >
                 Mentions légales
               </Link>
+              <span className="hidden md:inline-block h-4 border-l border-[color:var(--accent-wood)]/20 mx-2"></span>
               <Link
                 href="/privacy"
-                className="text-[color:var(--text-primary)] text-sm hover:text-[color:var(--primary-color)] transition"
+                className="text-[color:var(--text-primary)] text-sm hover:text-[color:var(--primary-color)] transition text-center md:text-right"
               >
                 Politique de confidentialité
               </Link>
