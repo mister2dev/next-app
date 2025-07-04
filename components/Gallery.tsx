@@ -4,12 +4,10 @@ import LightGallery from 'lightgallery/react';
 
 // Plugins
 import lgThumbnail from 'lightgallery/plugins/thumbnail';
-import lgZoom from 'lightgallery/plugins/zoom';
 
 // CSS
 import 'lightgallery/css/lightgallery.css';
 import 'lightgallery/css/lg-thumbnail.css';
-import 'lightgallery/css/lg-zoom.css';
 
 const images = [
   { src: '/images/food1.webp', alt: 'Assiette de lasagne à la bolognaise' },
@@ -47,7 +45,7 @@ export default function Gallery() {
       </h2>
       <LightGallery
         speed={500}
-        plugins={[lgThumbnail, lgZoom]}
+        plugins={[lgThumbnail]}
         elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
       >
         {images.map((image, i) => (

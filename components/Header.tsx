@@ -37,7 +37,7 @@ export default function Header() {
       className={`fixed top-0 w-full z-50 transition-colors duration-300
       ${
         scrolled
-          ? 'bg-[color:var(--secondary-color-1)]/90 backdrop-blur-md shadow-md'
+          ? 'bg-[color:var(--secondary-color-1)]/90 backdrop-blur-xs shadow-md'
           : 'bg-sky-50/70 backdrop-blur-lg'
       }
     `}

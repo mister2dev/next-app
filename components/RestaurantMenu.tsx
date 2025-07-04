@@ -120,9 +120,18 @@ export default function RestaurantMenu() {
       <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
         Menu
       </h1>
-      <Section title="Entrées" items={menu.entrees} />
-      <Section title="Plats" items={menu.plats} />
-      <Section title="Desserts" items={menu.desserts} />
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <img src="/entrée.png" alt="Entrée" className="w-full mb-12" />
+        <Section title="Entrées" items={menu.entrees} />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <img src="/plat8.png" alt="Plat" className="w-full mb-12" />
+        <Section title="Plats" items={menu.plats} />
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2">
+        <img src="/dessert.png" alt="Dessert" className="w-full mb-12" />
+        <Section title="Desserts" items={menu.desserts} />
+      </div>
     </section>
   );
 }

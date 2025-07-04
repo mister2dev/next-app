@@ -21,15 +21,16 @@ export default function About() {
           </div>
           <div>
             <p className="text-[color:var(--text-primary)] text-base text-center mb-6">
-              Depuis 1985, Le Bistrot de la Plage est un lieu de rencontre
-              unique à Paris, où l'art de la cuisine française se mêle à
-              l'ambiance chaleureuse d'une plage méditerranéenne.
+              Depuis 1985, Le Bistrot de la Plage est une adresse emblématique
+              en bord de mer, où la cuisine française raffinée rencontre
+              l’ambiance douce et ensoleillée du littoral.
             </p>
             <p className="text-[color:var(--text-primary)] text-base text-center mb-6">
-              Notre restaurant a été fondé par les frères Martin, deux
-              passionnés de cuisine et d'océan, qui ont su créer une ambiance
-              unique où les saveurs raffinées se marient parfaitement avec
-              l'atmosphère décontractée de la plage.
+              Fondé par les frères Martin, deux passionnés de gastronomie et
+              d’océan, notre établissement vous accueille dans un cadre
+              authentique et chaleureux, où les produits frais et les saveurs
+              marines sont à l’honneur. Ici, chaque plat évoque les embruns et
+              la convivialité d’un moment partagé les pieds dans le sable.
             </p>
             <div className="flex gap-8 my-10">
               <div className="flex items-center gap-3">

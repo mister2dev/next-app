@@ -6,7 +6,7 @@ export default function Contact() {
     <>
       <div className="mb-20">
         <div className="max-w-5xl mx-auto px-6">
-          <section id="contact" className="mb-20">
+          <section id="contact">
             <h2 className="text-3xl md:text-4xl text-[color:var(--primary-color)] text-center mb-12">
               Contactez-nous
             </h2>
@@ -101,7 +101,7 @@ export default function Contact() {
                   </h4>
                   <a
                     href="mailto:contact@bistrotdelaplage.fr"
-                    className="text-blue-600 hover:underline"
+                    className="text-[color:var(--accent-wood)] hover:underline"
                   >
                     contact@bistrotdelaplage.fr
                   </a>
@@ -113,22 +113,19 @@ export default function Contact() {
                   </h4>
                   <a
                     href="tel:+33412345678"
-                    className="text-blue-600 hover:underline"
+                    className="text-[color:var(--accent-wood)] hover:underline"
                   >
                     04 12 34 56 78
                   </a>
                 </div>
-                <div>
-                  <h4 className="text-xl font-semibold text-[color:var(--primary-color)] mb-2 flex items-center gap-2">
-                    Localisation
-                  </h4>
-                  <div className="rounded-lg overflow-hidden shadow-sm border border-gray-200">
+                <h4 className="text-xl font-semibold text-[color:var(--primary-color)] flex items-center gap-2">
+                  Localisation
+                </h4>
+                <div className="-mx-8">
+                  <div className="overflow-hidden shadow-sm border border-gray-200 relative aspect-square w-full">
                     <iframe
-                      title="Carte"
-                      src="https://www.openstreetmap.org/export/embed.html?bbox=3.876716%2C43.611242%2C3.879716%2C43.613242&amp;layer=mapnik"
-                      width="100%"
-                      height="180"
-                      className="border-0 w-full h-44"
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.615471358557!2d3.054258015750306!3d50.62924937952842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d4b6d4d245d3%3A0x9f93c0c75aa45f4c!2sLille%2C%20France!5e0!3m2!1sfr!2sfr!4v1687659731214!5m2!1sfr!2sfr"
+                      className="absolute top-0 left-0 w-full h-full border-0"
                       allowFullScreen
                       loading="lazy"
                       referrerPolicy="no-referrer-when-downgrade"
