@@ -8,12 +8,12 @@ export default function About() {
     <>
       <section id="about" className="p-6 bg-[color:var(--secondary-color-3)]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[400px] -mx-8 -mt-14">
+          <div className="relative h-[400px] -mx-6 -mt-6">
             <Image
               src="/interieur.webp"
               alt="Vue de la terrasse du restaurant"
               fill
-              className="object-cover rounded-lg"
+              className="object-cover"
             />
           </div>
         <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center">

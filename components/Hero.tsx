@@ -1,7 +1,5 @@
 'use client';
 
-import Link from 'next/link';
-
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center px-6">
@@ -16,6 +14,13 @@ export default function Hero() {
             chaleureuse aux saveurs du littoral. Réservez votre table pour une
             expérience authentique et gourmande.
           </p>
+          <a
+            href="#reservation"
+            className="inline-block mt-4 px-6 py-2 border border-[color:var(--primary-color)] text-[color:var(--primary-color)] rounded-full text-base font-light tracking-wide focus:outline-none focus:ring-2 focus:ring-[color:var(--primary-color)] focus:ring-opacity-50 cta-hover-translate"
+            style={{ letterSpacing: '0.08em' }}
+          >
+            <span>Réserver</span>
+          </a>
         </div>
 
         {/* Image à droite */}

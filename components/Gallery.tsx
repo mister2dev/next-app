@@ -39,7 +39,7 @@ export default function Gallery() {
   return (
     <div
       id="gallery"
-      className="w-full bg-[color:var(--secondary-color-3)] p-6 pb-20"
+      className="w-full p-6 pb-20"
     >
       <h2 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
         Galerie
@@ -47,7 +47,7 @@ export default function Gallery() {
       <LightGallery
         speed={500}
         plugins={[lgThumbnail]}
-        elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 -mx-8"
+        elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 -mx-6"
       >
         {images.map((image, i) => (
           <a
