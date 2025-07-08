@@ -24,7 +24,7 @@ export default function Hero() {
             <img
               src="/plat4.png"
               alt="Plat du restaurant"
-              className="object-cover w-full h-full mt-10"
+              className="object-cover w-full h-full mt-4"
             />
           </div>
         </div>
