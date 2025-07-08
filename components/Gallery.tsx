@@ -42,7 +42,7 @@ export default function Gallery() {
       className="w-full bg-[color:var(--secondary-color-3)] p-6 pb-20"
     >
       <h2 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
-        Galerie 
+        Galerie
       </h2>
       <LightGallery
         speed={500}
