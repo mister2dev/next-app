@@ -6,7 +6,7 @@ export default function Hero() {
       <div className="flex flex-col md:flex-row items-center justify-between md:gap-18">
         {/* Texte à gauche */}
         <div className="md:text-left max-w-[720px]">
-          <h1 className="text-4xl md:text-[80px] text-[color:var(--primary-color)] leading-tight mt-14">
+          <h1 className="text-4xl md:text-[80px] text-[color:var(--primary-color)] leading-tight pt-20">
             Savourez l’instant en bord de mer
           </h1>
           <p className="text-[color:var(--text-primary)] text-[16px] my-8 ">
