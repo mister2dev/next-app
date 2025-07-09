@@ -3,7 +3,7 @@
 export default function Reservation() {
     return (
 
-<div id="reservation" className="bg-white/90 shadow-md p-8 flex flex-col justify-center">
+<section id="reservation" className="bg-white/90 shadow-md p-8 flex flex-col justify-center">
                 <h3 className="text-2xl font-semibold text-[color:var(--primary-color)] mb-6 flex items-center gap-2">
                   Réserver votre table
                 </h3>
@@ -73,6 +73,6 @@ export default function Reservation() {
                     Réserver
                   </button>
                 </form>
-              </div>
+              </section>
             )
           }
