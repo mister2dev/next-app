@@ -103,7 +103,7 @@ export default function Header() {
             href="#reservation"
             className="bg-[color:var(--primary-color)] hover:bg-[color:var(--primary-color)]/80 text-[color:var(--text-inverse)] px-4 py-2 rounded-full transition"
           >
-            Réserver
+            Réserver 
           </Link>
         </nav>
 
