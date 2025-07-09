@@ -111,7 +111,7 @@ export default function Header() {
       />
       <div className="h-[80px] flex items-center justify-between md:px-6 mx-auto">
         <Link
-          href="/"
+          href="#hero"
           onClick={handleLogoClick}
           className="items-center flex flex-row md:text-2xl font-bold text-[color:var(--primary-color)]"
         >

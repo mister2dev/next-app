@@ -6,6 +6,7 @@ export default function Reservation() {
       id="reservation"
       className="bg-white/90 shadow-md p-8 flex flex-col justify-center"
     >
+      <div className="max-w-5xl bg-[color:var(--secondary-color-3)] rounded-xl mx-auto p-6">
       <h3 className="text-2xl font-semibold text-[color:var(--primary-color)] mb-6 flex items-center gap-2">
         Réserver votre table
       </h3>
@@ -15,10 +16,10 @@ export default function Reservation() {
             htmlFor="name"
             className="text-[color:var(--text-primary)] mb-2 flex items-center gap-2"
           >
-            Nom complet
           </label>
           <input
             type="text"
+            placeholder="Nom complet"
             id="name"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[color:var(--primary-color)]"
           />
@@ -28,10 +29,10 @@ export default function Reservation() {
             htmlFor="date"
             className="block text-[color:var(--text-primary)] mb-2"
           >
-            Date
           </label>
           <input
             type="date"
+            placeholder="Date"
             id="date"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[color:var(--primary-color)]"
           />
@@ -41,10 +42,10 @@ export default function Reservation() {
             htmlFor="time"
             className="block text-[color:var(--text-primary)] mb-2"
           >
-            Heure
           </label>
           <input
             type="time"
+            placeholder="Heure"
             id="time"
             className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:border-[color:var(--primary-color)]"
           />
@@ -54,7 +55,6 @@ export default function Reservation() {
             htmlFor="guests"
             className="block text-[color:var(--text-primary)] mb-2"
           >
-            Nombre de personnes
           </label>
           <select
             id="guests"
@@ -75,6 +75,7 @@ export default function Reservation() {
           Réserver
         </button>
       </form>
+      </div>
     </section>
   );
 }

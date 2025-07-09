@@ -38,9 +38,9 @@ const images = [
 export default function Gallery() {
   return (
     <div id="gallery" className="w-full p-6 pb-20">
-      <h2 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
+      {/* <h2 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
         Galerie
-      </h2>
+      </h2> */}
       <LightGallery
         speed={500}
         plugins={[lgThumbnail]}
