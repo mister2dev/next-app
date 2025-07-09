@@ -1,4 +1,4 @@
-@import "tailwindcss";
+@import 'tailwindcss';
 
 /* Surcharge LightGallery : overlay sur la miniature active */
 .lg-thumb-item.active,
@@ -10,7 +10,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0, 0, 0, 0.3);
   pointer-events: none;
   border-radius: 4px;
 }
@@ -19,14 +19,18 @@
 }
 
 :root {
-  --primary-color: #2C5D8A; /* Bleu acier profond */
+  --primary-color: #2c5d8a; /* Bleu acier profond */
   --secondary-color-1: rgb(139, 190, 208); /* Vert sauge doux */
-  --secondary-color-2: #F3E9D2; /* Beige clair/crème */
+  --secondary-color-2: #f3e9d2; /* Beige clair/crème */
   --secondary-color-3: rgb(209, 237, 247); /* Sable doux */
-  --accent-wood: #8B5E3C; /* Brun chaleureux */
+  --accent-wood: #8b5e3c; /* Brun chaleureux */
   --text-primary: #333333; /* Gris très foncé */
-  --text-inverse: #FFFFFF; /* Blanc pur */
-  --background: linear-gradient(180deg, rgba(44, 93, 138, 0.05) 0%, rgba(159, 195, 160, 0.05) 100%);
+  --text-inverse: #ffffff; /* Blanc pur */
+  --background: linear-gradient(
+    180deg,
+    rgba(44, 93, 138, 0.05) 0%,
+    rgba(159, 195, 160, 0.05) 100%
+  );
   --foreground: var(--text-primary);
 }
 
@@ -41,10 +45,10 @@
   :root {
     --background: #1a1a1a; /* Fond plus foncé que le gris très foncé */
     --foreground: var(--text-inverse); /* Blanc pur pour meilleure lisibilité */
-    --primary-color: #4D86B5; /* Bleu acier plus foncé */
-    --secondary-color-1: #7FB58B; /* Vert sauge plus foncé */
-    --secondary-color-2: #E6D9C4; /* Beige clair plus foncé */
-    --accent-wood: #6B442B; /* Brun chaleureux plus foncé */
+    --primary-color: #4d86b5; /* Bleu acier plus foncé */
+    --secondary-color-1: #7fb58b; /* Vert sauge plus foncé */
+    --secondary-color-2: #e6d9c4; /* Beige clair plus foncé */
+    --accent-wood: #6b442b; /* Brun chaleureux plus foncé */
   }
 }
 
@@ -77,7 +81,7 @@ body {
   height: 100%;
   background: var(--primary-color);
   z-index: 0;
-  transition: left 0.4s cubic-bezier(0.4,0,0.2,1);
+  transition: left 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cta-hover-translate:hover::before,
 .cta-hover-translate:focus::before {
@@ -86,7 +90,7 @@ body {
 .cta-hover-translate span {
   position: relative;
   z-index: 1;
-  transition: color 0.4s cubic-bezier(0.4,0,0.2,1);
+  transition: color 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .cta-hover-translate:hover span,
 .cta-hover-translate:focus span {

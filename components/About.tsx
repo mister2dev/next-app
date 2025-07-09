@@ -16,9 +16,9 @@ export default function About() {
               className="object-cover"
             />
           </div>
-        <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center">
-          Notre Histoire
-        </h1>
+          <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center">
+            Notre Histoire
+          </h1>
           <div>
             <p className="text-[color:var(--text-primary)] text-base text-center mb-6">
               Depuis 1985, Le Bistrot de la Plage est une adresse emblématique
