@@ -55,12 +55,8 @@ export default function Header() {
           onClick={handleLogoClick}
           className="items-center flex flex-row md:text-2xl font-bold text-[color:var(--primary-color)]"
         >
-          <img
-            src="/bistrot_plage.webp"
-            alt="Logo"
-            className="h-12 w-auto mx-2"
-          />
-          Le Bistrot de la Plage
+          <img src="/logo.png" alt="Logo" className="h-16 w-auto mx-2" />
+          Restaurant au produit de la mer
         </Link>
         <nav className="hidden md:flex gap-6 text-lg font-medium items-center">
           <Link

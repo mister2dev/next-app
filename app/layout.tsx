@@ -11,7 +11,7 @@ const marcellus = Marcellus({
 });
 
 export const metadata: Metadata = {
-  title: 'Le Bistrot De La Plage',
+  title: 'Restaurant Brasserie Française',
   description: 'Cuisine raffinée et ambiance chaleureuse',
 };
 
