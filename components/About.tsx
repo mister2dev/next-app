@@ -7,18 +7,18 @@ export default function About() {
   return (
     <>
       <section id="about" className="p-6 bg-[color:var(--secondary-color-3)]">
-        <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
-          Notre Histoire
-        </h1>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[400px]">
+          <div className="relative h-[400px] -mx-6 -mt-6">
             <Image
               src="/interieur.webp"
               alt="Vue de la terrasse du restaurant"
               fill
-              className="object-cover rounded-lg"
+              className="object-cover"
             />
           </div>
+          <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center">
+            Notre Histoire
+          </h1>
           <div>
             <p className="text-[color:var(--text-primary)] text-base text-center mb-6">
               Depuis 1985, Le Bistrot de la Plage est une adresse emblématique

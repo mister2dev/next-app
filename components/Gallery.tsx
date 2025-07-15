@@ -32,21 +32,19 @@ const images = [
     alt: 'Plat de nouilles asiatiques avec tofu et légumes',
   },
   { src: '/images/food7.webp', alt: 'Assiette de légumes rôtis' },
+  { src: '/images/food8.webp', alt: 'Assiette de frites avec ses légumes' },
 ];
 
 export default function Gallery() {
   return (
-    <div
-      id="gallery"
-      className="w-full bg-[color:var(--secondary-color-3)] p-6 pb-20"
-    >
-      <h2 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
-        Notre Galerie
-      </h2>
+    <div id="gallery" className="w-full p-6 pb-20">
+      {/* <h2 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
+        Galerie
+      </h2> */}
       <LightGallery
         speed={500}
         plugins={[lgThumbnail]}
-        elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4"
+        elementClassNames="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 -mx-6"
       >
         {images.map((image, i) => (
           <a
