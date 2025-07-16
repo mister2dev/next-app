@@ -115,7 +115,7 @@ export default function Header() {
         style={{ pointerEvents: isMenuOpen ? 'auto' : 'none' }}
         onClick={toggleMenu}
       />
-      <div className="h-[80px] flex items-center justify-between md:px-6 mx-auto max-w-7xl w-full">
+      <div className="h-[80px] flex items-center justify-between md:px-6 w-full">
         <Link
           href="#hero"
           onClick={handleLogoClick}
