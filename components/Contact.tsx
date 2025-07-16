@@ -17,7 +17,7 @@ export default function Contact() {
                   Adresse
                 </h4>
                 <p className="text-gray-700">
-                  123 Plage du Soleil, 34000 Montpellier
+                  123 Plage du Soleil, 33120 Arcachon
                 </p>
               </div>
               <div>
@@ -26,10 +26,10 @@ export default function Contact() {
                   Email
                 </h4>
                 <a
-                  href="mailto:contact@bistrotdelaplage.fr"
+                  href="mailto:contact@brasseriefrancaise.fr"
                   className="text-[color:var(--accent-wood)] hover:underline"
                 >
-                  contact@bistrotdelaplage.fr
+                  contact@brasseriefrancaise.fr
                 </a>
               </div>
               <div>
@@ -38,10 +38,10 @@ export default function Contact() {
                   Téléphone
                 </h4>
                 <a
-                  href="tel:+33412345678"
+                  href="tel:+33624251934"
                   className="text-[color:var(--accent-wood)] hover:underline"
                 >
-                  04 12 34 56 78
+                  +33 6 24 25 19 34
                 </a>
               </div>
               <h4 className="text-xl font-semibold text-[color:var(--primary-color)] flex items-center gap-2">
@@ -50,7 +50,7 @@ export default function Contact() {
               <div className="-mx-8">
                 <div className="overflow-hidden shadow-sm border border-gray-200 relative aspect-square w-full">
                   <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2530.615471358557!2d3.054258015750306!3d50.62924937952842!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c2d4b6d4d245d3%3A0x9f93c0c75aa45f4c!2sLille%2C%20France!5e0!3m2!1sfr!2sfr!4v1687659731214!5m2!1sfr!2sfr"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2981.662842928742!2d-1.180624884043279!3d44.62481597910323!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd55372c9c380671%3A0x9c9b5c8602f8f632!2sArcachon%2C%20France!5e0!3m2!1sfr!2sfr!4v1689456100449!5m2!1sfr!2sfr"
                     className="absolute top-0 left-0 w-full h-full border-0"
                     allowFullScreen
                     loading="lazy"

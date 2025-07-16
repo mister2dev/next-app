@@ -8,9 +8,9 @@ export default function About() {
     <>
       <section id="about" className="p-6 bg-[color:var(--secondary-color-3)]">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-[400px] -mx-6 -mt-6">
+          <div className="relative h-[600px] -mx-6 -mt-6">
             <Image
-              src="/interieur.webp"
+              src="/deco_interieur.webp"
               alt="Vue de la terrasse du restaurant"
               fill
               className="object-cover"
@@ -21,9 +21,9 @@ export default function About() {
           </h1>
           <div>
             <p className="text-[color:var(--text-primary)] text-base text-center mb-6">
-              Depuis 1985, Le Bistrot de la Plage est une adresse emblématique
-              en bord de mer, où la cuisine française raffinée rencontre
-              l’ambiance douce et ensoleillée du littoral.
+              Depuis 1985, Le Restaurant Brasserie Française est une adresse
+              emblématique en bord de mer, où la cuisine française raffinée
+              rencontre l’ambiance douce et ensoleillée du littoral.
             </p>
             <p className="text-[color:var(--text-primary)] text-base text-center mb-6">
               Fondé par les frères Martin, deux passionnés de gastronomie et

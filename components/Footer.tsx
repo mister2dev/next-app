@@ -172,8 +172,8 @@ export default function Footer() {
         <div className="mt-6 pt-8 border-t border-[color:var(--accent-wood)]/20">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between">
             <p className="text-[color:var(--text-primary)] text-sm text-left">
-              © {new Date().getFullYear()} Le Bistrot de la Plage. Tous droits
-              réservés.
+              © {new Date().getFullYear()} Restaurant Brasserie Française. Tous
+              droits réservés.
             </p>
             <div className="flex w-full mt-4 md:mt-0 md:flex-row justify-between md:justify-end md:items-center md:w-auto md:space-x-6">
               <Link

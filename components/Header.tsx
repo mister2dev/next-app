@@ -35,7 +35,13 @@ function NavLinks() {
   );
 }
 
-function MobileMenu({ isOpen, onClose }: { isOpen: boolean; onClose: () => void }) {
+function MobileMenu({
+  isOpen,
+  onClose,
+}: {
+  isOpen: boolean;
+  onClose: () => void;
+}) {
   return (
     <div
       className={`fixed top-0 right-0 h-[900px] bg-[color:var(--secondary-color-1)] shadow-lg py-20 w-64 z-48 md:hidden transform transition-transform duration-300 ${
@@ -77,7 +83,7 @@ export default function Header() {
 
   useEffect(() => {
     const onScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 8);
     };
     window.addEventListener('scroll', onScroll);
     return () => window.removeEventListener('scroll', onScroll);
@@ -109,14 +115,14 @@ export default function Header() {
         style={{ pointerEvents: isMenuOpen ? 'auto' : 'none' }}
         onClick={toggleMenu}
       />
-      <div className="h-[80px] flex items-center justify-between md:px-6 mx-auto">
+      <div className="h-[80px] flex items-center justify-between md:px-6 mx-auto max-w-7xl w-full">
         <Link
           href="#hero"
           onClick={handleLogoClick}
-          className="items-center flex flex-row md:text-2xl font-bold text-[color:var(--primary-color)]"
+          className="items-center flex flex-row text-xs md:text-2xl font-bold text-[color:var(--primary-color)]"
         >
-          <img src="/logo.png" alt="Logo" className="h-16 w-auto mx-2" />
-          Restaurant au produit de la mer
+          <img src="/logo.webp" alt="Logo" className="h-16 w-auto mx-2" />
+          Restaurant Brasserie Française
         </Link>
         <NavLinks />
         <button
