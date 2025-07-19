@@ -4,7 +4,7 @@ export default function Reservation() {
   return (
     <section
       id="reservation"
-      className="bg-white/90 shadow-md p-8 flex flex-col justify-center w-full"
+      className="px-8 flex flex-col justify-center w-full"
     >
       <div className="max-w-5xl bg-[color:var(--secondary-color-3)] rounded-xl mx-auto p-6">
         <h3 className="text-2xl font-semibold text-[color:var(--primary-color)] mb-6 flex items-center gap-2">

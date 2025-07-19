@@ -20,7 +20,7 @@
 
 :root {
   --primary-color: #2c5d8a; /* Bleu acier profond */
-  --secondary-color-1: rgb(139, 190, 208); /* Vert sauge doux */
+  --secondary-color-1: rgb(139, 190, 208); /* bleu glacier */
   --secondary-color-2: #f3e9d2; /* Beige clair/crème */
   --secondary-color-3: rgb(209, 237, 247); /* Sable doux */
   --accent-wood: #8b5e3c; /* Brun chaleureux */
@@ -46,9 +46,11 @@
     --background: #1a1a1a; /* Fond plus foncé que le gris très foncé */
     --foreground: var(--text-inverse); /* Blanc pur pour meilleure lisibilité */
     --primary-color: #4d86b5; /* Bleu acier plus foncé */
-    --secondary-color-1: #7fb58b; /* Vert sauge plus foncé */
+    --secondary-color-1: #467c94; /* bleu glacier */
     --secondary-color-2: #e6d9c4; /* Beige clair plus foncé */
-    --accent-wood: #6b442b; /* Brun chaleureux plus foncé */
+    --secondary-color-3: #1f637b; /* Beige clair plus foncé */
+    --accent-wood: #d96a24; /* Brun chaleureux plus foncé */
+    --text-primary: #d5c4ba;
   }
 }
 

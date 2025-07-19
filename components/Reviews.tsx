@@ -35,7 +35,7 @@ const reviews: Review[] = [
 
 export default function Reviews() {
   return (
-    <section id="testimonials" className="mb-20">
+    <section id="testimonials">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl md:text-4xl text-[color:var(--primary-color)] text-center mb-12">
           Nos Avis

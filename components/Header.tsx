@@ -126,7 +126,7 @@ export default function Header() {
         </Link>
         <NavLinks />
         <button
-          className="px-6 md:hidden text-gray-700 z-50"
+          className="px-6 md:hidden text-[color:var(--primary-color)] z-50"
           onClick={toggleMenu}
           aria-label={isMenuOpen ? 'Fermer le menu' : 'Ouvrir le menu'}
           aria-expanded={isMenuOpen}

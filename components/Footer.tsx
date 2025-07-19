@@ -14,7 +14,7 @@ export default function Footer() {
               Horaires d'ouverture
             </h3>
             <div className="space-y-2">
-              <div className="flex items-center gap-3">
+              <div className="flex gap-3 md:gap-6">
                 <span className="text-[color:var(--text-primary)] font-semibold w-24">
                   Vendredi :
                 </span>
@@ -22,7 +22,7 @@ export default function Footer() {
                   12:00–14:00, 19:00–22:00
                 </span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex gap-3 md:gap-6">
                 <span className="text-[color:var(--text-primary)] font-semibold w-24">
                   Samedi :
                 </span>
@@ -30,7 +30,7 @@ export default function Footer() {
                   12:00–14:00, 19:00–22:00
                 </span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex gap-3">
                 <span className="text-[color:var(--text-primary)] font-semibold w-24">
                   Dimanche :
                 </span>
@@ -38,7 +38,7 @@ export default function Footer() {
                   12:00–17:00
                 </span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex gap-3">
                 <span className="text-[color:var(--text-primary)] font-semibold w-24">
                   Lundi :
                 </span>
@@ -46,7 +46,7 @@ export default function Footer() {
                   12:00–14:00
                 </span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex gap-3">
                 <span className="text-[color:var(--text-primary)] font-semibold w-24">
                   Mardi :
                 </span>
@@ -54,7 +54,7 @@ export default function Footer() {
                   09:00–17:00
                 </span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex gap-3">
                 <span className="text-[color:var(--text-primary)] font-semibold w-24">
                   Mercredi :
                 </span>
@@ -62,7 +62,7 @@ export default function Footer() {
                   12:00–14:00
                 </span>
               </div>
-              <div className="flex items-center gap-3">
+              <div className="flex gap-3">
                 <span className="text-[color:var(--text-primary)] font-semibold w-24">
                   Jeudi :
                 </span>

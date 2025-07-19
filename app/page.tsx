@@ -9,15 +9,14 @@ import Feature from '@/components/Feature';
 
 export default function Home() {
   return (
-    <div className="bg-sky-50 items-center min-h-screen md:pb-20 gap-16 font-[family-name:var(--font-geist-sans)]">
-      <div className="flex flex-col row-start-2 items-center">
+    <div className="items-center min-h-screen md:pb-20 font-[family-name:var(--font-geist-sans)]">
+      <div className="flex flex-col row-start-2 items-center gap-16">
         <Hero />
         <Reservation />
         <About />
         <Feature />
         <RestaurantMenu />
         <Gallery />
-        {/* <Team /> */}
         <Reviews />
         <Contact />
       </div>

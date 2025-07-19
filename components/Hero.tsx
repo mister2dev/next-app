@@ -25,7 +25,7 @@ export default function Hero() {
 
         {/* Image à droite */}
         <div className="flex-1 w-full max-w-[600px]">
-          <div className="relative w-full md:min-w-[570px]">
+          <div className="relative w-full md:min-w-[470px] md:max-w-[400px]">
             <img
               src="/plat4.png"
               alt="Plat du restaurant"

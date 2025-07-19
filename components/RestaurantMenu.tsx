@@ -115,20 +115,20 @@ export default function RestaurantMenu() {
   return (
     <section
       id="menu"
-      className="max-w-3xl mx-auto p-6 text-[color:var(--text-primary)]"
+      className="max-w-3xl mx-auto p-6 text-[color:var(--text-primary)] grid gap-16"
     >
-      <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center mb-12">
+      <h1 className="text-4xl md:text-5xl text-[color:var(--primary-color)] text-center">
         Menu
       </h1>
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <img src="/entrée.png" alt="Entrée" className="w-full mb-12" />
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 items-center">
+        <img src="/entrée.png" alt="Entrée" className="mb-12" />
         <Section title="Entrées" items={menu.entrees} />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2">
-        <img src="/plat8.png" alt="Plat" className="w-full mb-12" />
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 items-center">
+        <img src="/plat8.png" alt="Plat" className="w-full mb-12 md:order-2" />
         <Section title="Plats" items={menu.plats} />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2">
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 items-center">
         <img src="/dessert.png" alt="Dessert" className="w-full mb-12" />
         <Section title="Desserts" items={menu.desserts} />
       </div>
