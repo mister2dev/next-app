@@ -12,6 +12,8 @@
     "@radix-ui/colors": "^3.0.0",
     "@sanity/client": "^7.6.0",
     "@tailwindcss/postcss": "^4.1.10",
+    "framer-motion": "^12.23.12",
+    "gsap": "^3.13.0",
     "lightgallery": "2.9.0-beta.1",
     "lucide-react": "^0.522.0",
     "next": "15.3.4",
